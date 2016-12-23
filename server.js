@@ -1,5 +1,6 @@
 // Load the http module to create an http server.
-var http = require('http');
+var express = require('express');
+var app = express();
 var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
 var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
@@ -11,4 +12,14 @@ var server = http.createServer(function (request, response) {
 
 server.listen(server_port, server_ip_address, function () {
   console.log( "Listening on " + server_ip_address + ", port " + server_port )
+});
+
+
+app.get('/', function (req, res) {
+  res.send('Hello World!')
+})
+
+app.listen(port, ipaddress, function() {
+        console.log('%s: Node server started on %s:%d ...',
+                        Date(Date.now() ), ipaddress, port);
 });
