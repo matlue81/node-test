@@ -1,4 +1,10 @@
-"scripts": {
-  "start": "node server.js"
-},
-"main": "server.js"
+{
+  "name": "os node test",
+  "version": "0.1",
+  "description": "test app",
+  "author": "Mathias <mathias.luestraeten@gmail.com>",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js"
+}
