@@ -1,6 +1,6 @@
 {
   "name": "os-node-test",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "test app",
   "author": "Mathias <mathias.luestraeten@gmail.com>",
   "scripts": {
